@@ -31,8 +31,16 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	// 이것도 이벤트, 특정 시간마다 게속 호출되는 함수 
 
-public: 
-	UPROPERTY(BlueprintReadWrite)
+public:  
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly)
 	USceneComponent* Scene;
+
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly)
+	UStaticMeshComponent* StaticMesh;
+
+	UPROPERTY(BlueprintReadOnly)
+	bool IsMoveRight; // 부울형의 IsMoveRight 변수 선언 
+
+	float LocX; //X_Position 변수 생성 
 
 };

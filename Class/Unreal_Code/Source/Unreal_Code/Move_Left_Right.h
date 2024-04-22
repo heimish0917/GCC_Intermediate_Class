@@ -6,7 +6,7 @@
 // 즉, 중복되는 것을 한번만 표기하기 위해서 사용하는 것이 Pragma Once이다 
 
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+#include "GameFramework/Actor.h" // 부모인 액터를 확인하기 위해 사용되는 용도 
 #include "Move_Left_Right.generated.h" // Unreal Class 라이브러리 생성 
 // Generated는 include 제일 마지막에 해주어야 한다 
 
